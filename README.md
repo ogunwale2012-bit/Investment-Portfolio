@@ -1,34 +1,120 @@
-# Investment Portfolio – Oluwayinka
+# Machine Learning Stock Recommendation Model
 
-This repository contains investment research and quantitative finance projects focused on equity valuation, financial modeling, and macroeconomic analysis.
+## Overview
 
-The goal of this portfolio is to demonstrate analytical thinking, financial modeling ability, and data-driven investment decision making.
+This project develops a machine learning-based stock recommendation model that classifies U.S. equities into Buy, Hold, and Sell categories using historical stock market data and U.S. interest rate data.
+
+The objective is to combine financial analysis, quantitative methods, and machine learning techniques to support data-driven investment decision-making.
 
 
-## Projects
+## Project Objective
 
-1. **Buy / Hold / Sell Stock Recommendation Model**  
-   A quantitative scoring model that evaluates stocks based on valuation, profitability, and financial strength.
+The model seeks to identify patterns in historical stock performance and macroeconomic conditions that may help predict future stock returns.
 
-2. **Global Banking Stability Analysis using IMF Financial Soundness Indicators**  
-   Analysis of global banking sector health using IMF Financial Soundness Indicators (FSIs).
+Predictions are translated into investment recommendations:
 
-3. **Equity Valuation Models**  
-   Discounted Cash Flow (DCF) and relative valuation models for listed companies.
+* Buy
+* Hold
+* Sell
 
-4. **Sector and ETF Analysis**  
-   Sector performance analysis and ETF investment insights.
+based on expected future stock performance.
 
-5. **Quantitative Market Analysis**  
-   Data-driven analysis of financial markets using statistical and programming tools.
+
+## Data Sources
+
+### Yahoo Finance
+
+Stock market data including:
+
+* Historical prices
+* Trading volume
+* Daily returns
+
+### Federal Reserve Economic Data (FRED)
+
+Macroeconomic indicators including:
+
+* Federal Funds Rate
+* Treasury Yields
+* Other interest rate indicators
+
+
+## Features
+
+The model incorporates both market and macroeconomic variables, including:
+
+### Market Features
+
+* Historical stock returns
+* Moving averages
+* Price momentum
+* Trading volume
+* Volatility measures
+
+### Macroeconomic Features
+
+* Federal Funds Rate
+* Interest rate trends
+* Treasury yield indicators
+
+
+## Machine Learning Approach
+
+The project applies supervised machine learning techniques to classify stocks into Buy, Hold, and Sell categories based on future return outcomes.
+
+Models evaluated may include:
+
+* Logistic Regression
+* Random Forest
+* Gradient Boosting
+
+
+## Model Evaluation
+
+Model performance is evaluated using:
+
+* Accuracy
+* Precision
+* Recall
+* F1 Score
+* Confusion Matrix
+
 
 ## Tools & Technologies
 
-- Python (pandas, numpy)
-- Excel (financial modeling)
-- Git & GitHub
-- Financial data sources (Yahoo Finance, IMF Data)
-- Data visualization (matplotlib, seaborn)
+* R
+* Machine Learning
+* Yahoo Finance
+* Federal Reserve Economic Data (FRED)
+* tidyverse
+* tidyquant
+* caret
+* randomForest
+* ggplot2
+* Git & GitHub
 
-## Objective
-This repository is designed to showcase practical applications of financial analysis, macroeconomic research, and quantitative modeling in investment decision making.
+
+## Repository Structure
+
+```text
+Machine-Learning-Stock-Recommendation-Model/
+│
+├── data/
+├── scripts/
+├── outputs/
+└── README.md
+```
+
+
+## Future Enhancements
+
+* Additional macroeconomic indicators
+* Feature importance analysis
+* Hyperparameter tuning
+* Interactive dashboard for model outputs
+* Automated model retraining
+
+
+## Disclaimer
+
+This project is intended for educational and research purposes only and does not constitute investment advice.
