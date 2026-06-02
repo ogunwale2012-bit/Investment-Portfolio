@@ -13,45 +13,33 @@ Sell
 
 based on expected future stock performance.
 ## Data Sources
-This project pulls data from four sources:
-S&P 500 Ticker List using R's tidyquant package including:
+This project pulls data from four sources: S&P 500 Ticker List using R's tidyquant
 
-Full list of current S&P 500 stocks
-Filtered to focus on the top 100–150 stocks by market cap
-
-Yahoo Finance
-Stock market data including:
-
+Yahoo Finance - Stock market data including:
 Historical prices (Open, High, Low, Close, Adjusted Close)
 Trading volume
 Daily returns
 
-Calculated Market Features
-Derived from Yahoo Finance data including:
-
+Calculated Market Features derived from Yahoo Finance data including:
 Moving averages (short-term and long-term)
 Price momentum
 Volatility measures
 
-Federal Reserve Economic Data (FRED)
-Macroeconomic indicators including:
-
+Federal Reserve Economic Data (FRED) - Macroeconomic indicators including:
 Federal Funds Rate
 Treasury Yields
 Other interest rate indicators
 
 # Features
 The model incorporates both market and macroeconomic variables, including:
-Market Features
-
+Market Features:
 Historical stock returns
 Moving averages
 Price momentum
 Trading volume
 Volatility measures
 
-Macroeconomic Features
-
+Macroeconomic Features:
 Federal Funds Rate
 Interest rate trends
 Treasury yield indicators
