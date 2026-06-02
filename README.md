@@ -1,120 +1,96 @@
-# Machine Learning Stock Recommendation Model
-
-## Overview
-
-This project develops a machine learning-based stock recommendation model that classifies U.S. equities into Buy, Hold, and Sell categories using historical stock market data and U.S. interest rate data.
-
-The objective is to combine financial analysis, quantitative methods, and machine learning techniques to support data-driven investment decision-making.
-
-
-## Project Objective
-
+##**Machine Learning Stock Recommendation Model**
+Overview
+This project builds a machine learning model to evaluate S&P 500 stocks and generate Buy, Hold, or Sell recommendations using historical market data and macroeconomic indicators.
+The model screens the top 100–150 S&P 500 stocks, combining price and volume data from Yahoo Finance with U.S. interest rate data from FRED to support data-driven investment decision-making.
+**##Project Objective**
 The model seeks to identify patterns in historical stock performance and macroeconomic conditions that may help predict future stock returns.
-
 Predictions are translated into investment recommendations:
 
-* Buy
-* Hold
-* Sell
+Buy
+Hold
+Sell
 
 based on expected future stock performance.
-
-
 ## Data Sources
+This project pulls data from four sources:
+S&P 500 Ticker List using R's tidyquant package including:
 
-### Yahoo Finance
+Full list of current S&P 500 stocks
+Filtered to focus on the top 100–150 stocks by market cap
 
+Yahoo Finance
 Stock market data including:
 
-* Historical prices
-* Trading volume
-* Daily returns
+Historical prices (Open, High, Low, Close, Adjusted Close)
+Trading volume
+Daily returns
 
-### Federal Reserve Economic Data (FRED)
+Calculated Market Features
+Derived from Yahoo Finance data including:
 
+Moving averages (short-term and long-term)
+Price momentum
+Volatility measures
+
+Federal Reserve Economic Data (FRED)
 Macroeconomic indicators including:
 
-* Federal Funds Rate
-* Treasury Yields
-* Other interest rate indicators
+Federal Funds Rate
+Treasury Yields
+Other interest rate indicators
 
-
-## Features
-
+# Features
 The model incorporates both market and macroeconomic variables, including:
+Market Features
 
-### Market Features
+Historical stock returns
+Moving averages
+Price momentum
+Trading volume
+Volatility measures
 
-* Historical stock returns
-* Moving averages
-* Price momentum
-* Trading volume
-* Volatility measures
+Macroeconomic Features
 
-### Macroeconomic Features
+Federal Funds Rate
+Interest rate trends
+Treasury yield indicators
 
-* Federal Funds Rate
-* Interest rate trends
-* Treasury yield indicators
-
-
-## Machine Learning Approach
-
+##Machine Learning Approach
 The project applies supervised machine learning techniques to classify stocks into Buy, Hold, and Sell categories based on future return outcomes.
-
 Models evaluated may include:
 
-* Logistic Regression
-* Random Forest
-* Gradient Boosting
-
+Logistic Regression
+Random Forest
+Gradient Boosting
 
 ## Model Evaluation
-
 Model performance is evaluated using:
 
-* Accuracy
-* Precision
-* Recall
-* F1 Score
-* Confusion Matrix
-
+Accuracy
+Precision
+Recall
+F1 Score
+Confusion Matrix
 
 ## Tools & Technologies
 
-* R
-* Machine Learning
-* Yahoo Finance
-* Federal Reserve Economic Data (FRED)
-* tidyverse
-* tidyquant
-* caret
-* randomForest
-* ggplot2
-* Git & GitHub
+R
+Yahoo Finance
+Federal Reserve Economic Data (FRED)
+tidyverse
+tidyquant
+caret
+randomForest
+ggplot2
+Git & GitHub
 
-
-## Repository Structure
-
-```text
-Machine-Learning-Stock-Recommendation-Model/
+Repository Structure
+textInvestment-Portfolio/
 │
 ├── data/
 ├── scripts/
 ├── outputs/
 └── README.md
-```
-
-
-## Future Enhancements
-
-* Additional macroeconomic indicators
-* Feature importance analysis
-* Hyperparameter tuning
-* Interactive dashboard for model outputs
-* Automated model retraining
-
 
 ## Disclaimer
-
 This project is intended for educational and research purposes only and does not constitute investment advice.
