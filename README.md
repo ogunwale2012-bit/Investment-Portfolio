@@ -85,13 +85,7 @@ randomForest
 ggplot2
 Git & GitHub
 
-Repository Structure
-textInvestment-Portfolio/
-│
-├── data/
-├── scripts/
-├── outputs/
-└── README.md
+
 
 ## Disclaimer
 This project is intended for educational and research purposes only and does not constitute investment advice.
