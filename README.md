@@ -44,7 +44,7 @@ Federal Funds Rate
 Interest rate trends
 Treasury yield indicators
 
-##Machine Learning Approach
+## Machine Learning Approach
 The project applies supervised machine learning techniques to classify stocks into Buy, Hold, and Sell categories based on future return outcomes.
 Models evaluated may include:
 
