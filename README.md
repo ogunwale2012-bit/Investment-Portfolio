@@ -1,4 +1,4 @@
-##**Machine Learning Stock Recommendation Model**
+## Machine Learning Stock Recommendation Model
 Overview
 This project builds a machine learning model to evaluate S&P 500 stocks and generate Buy, Hold, or Sell recommendations using historical market data and macroeconomic indicators.
 The model screens the top 100–150 S&P 500 stocks, combining price and volume data from Yahoo Finance with U.S. interest rate data from FRED to support data-driven investment decision-making.
